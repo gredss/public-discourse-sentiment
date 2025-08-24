@@ -14,7 +14,7 @@ This project situates itself in a **real-world case study**: the controversy sur
 
 ## Initial Step: Data Extraction and Cleaning
 
-As a starting point, we collected user-generated comments by extracting **five YouTube videos** related to the DPR bonus salary issue using the YouTube API. This raw dataset mirrors the **authentic language of Indonesian netizens**, including non-standard expressions and heavy use of slang.
+As a starting point, I collected user-generated comments by extracting **five YouTube videos** related to the DPR bonus salary issue using the YouTube API. This raw dataset mirrors the **authentic language of Indonesian netizens**, including non-standard expressions and heavy use of slang.
 
 A **basic cleaning pipeline** was then applied to prepare the data for downstream experiments. This included:
 
@@ -29,7 +29,7 @@ This initial dataset serves as the foundation for evaluating transformer-based s
 
 ## 1. Model Evaluation and Benchmarking
 
-We compare transformer-based sentiment models on both **raw** and **cleaned** text data:
+I compare transformer-based sentiment models on both **raw** and **cleaned** text data:
 
 * **IndoBERT**: `mdhugol/indonesia-bert-sentiment-classification`
 * **IndoRoBERTa**: `indobenchmark/indoroberta-base` (sentiment fine-tuned)
