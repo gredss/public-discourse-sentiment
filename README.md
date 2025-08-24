@@ -27,10 +27,6 @@ This initial dataset serves as the foundation for evaluating transformer-based s
 
 ---
 
-Here’s a revised version of your README section with the reasoning you want to add, plus the illustrative table:
-
----
-
 ## 1. Model Evaluation and Benchmarking
 
 I compare transformer-based sentiment models on both raw and cleaned text data:
