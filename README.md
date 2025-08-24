@@ -27,25 +27,47 @@ This initial dataset serves as the foundation for evaluating transformer-based s
 
 ---
 
+Here’s a revised version of your README section with the reasoning you want to add, plus the illustrative table:
+
+---
+
 ## 1. Model Evaluation and Benchmarking
 
-I compare transformer-based sentiment models on both **raw** and **cleaned** text data:
+I compare transformer-based sentiment models on both raw and cleaned text data:
 
 * **IndoBERT**: `mdhugol/indonesia-bert-sentiment-classification`
 * **IndoRoBERTa**: `indobenchmark/indoroberta-base` (sentiment fine-tuned)
 
-### Key Results
+---
 
-* **IndoBERT**
+#### Key Results
 
-  * Distribution nearly identical across raw vs clean inputs.
-  * Agreement between raw and clean labels: **\~99%**.
-  * Strong robustness against noise and inconsistent preprocessing.
+**IndoBERT**
 
-* **IndoRoBERTa**
+* Distribution nearly identical across raw vs clean inputs.
+* Agreement between raw and clean labels: \~99%.
+* Strong robustness against noise and inconsistent preprocessing.
+* **Raw vs Clean for BERT differ by <0.2%. This shows that cleaning did not add value, and the model can already interpret messy text well.**
+* **Because sentiment is often expressed through slang, emoji, and “raw” stylistics in Indonesian social media, I recommend using the raw dataset (`Comment`) as the primary input.**
 
-  * Clearer separation of Neutral class.
-  * Agreement rate: **\~88%**, showing higher sensitivity to preprocessing.
-  * Requires a stricter normalization pipeline.
+**IndoRoBERTa**
 
-IndoBERT is recommended for production deployments due to stability and robustness, while IndoRoBERTa may be used in controlled environments where preprocessing can be guaranteed.
+* Clearer separation of Neutral class.
+* Agreement rate: \~88%, showing higher sensitivity to preprocessing.
+* Requires a stricter normalization pipeline.
+
+Hence, IndoBERT is recommended for production deployments due to stability and robustness, while IndoRoBERTa may be used in controlled environments where preprocessing can be guaranteed.
+
+---
+
+#### Example of Raw vs Clean Differences
+
+| Index | Comment                                           | clean\_comment                                    | label\_raw | label\_clean |
+| ----- | ------------------------------------------------- | ------------------------------------------------- | ---------- | ------------ |
+| 119   | @@semestaraya562oooh gitu ya                      | @ gitu ya                                         | LABEL\_0   | LABEL\_2     |
+| 207   | @@RadioSantuyID Siap gaspool                      | @ siap gaspool                                    | LABEL\_1   | LABEL\_0     |
+| 211   | @@RadioSantuyID untuk mereka yg menempatkan di... | @ untuk mereka yg menempatkan diri sebagai opo... | LABEL\_0   | LABEL\_2     |
+
+This table illustrates how minimal cleaning can sometimes alter the contextual cues that influence label assignment, reinforcing the choice of **raw data** for IndoBERT.
+
+---
