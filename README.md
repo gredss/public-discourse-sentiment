@@ -48,7 +48,7 @@ I compare transformer-based sentiment models on both raw and cleaned text data:
 * Agreement between raw and clean labels: \~99%.
 * Strong robustness against noise and inconsistent preprocessing.
 * **Raw vs Clean for BERT differ by <0.2%. This shows that cleaning did not add value, and the model can already interpret messy text well.**
-* **Because sentiment is often expressed through slang, emoji, and “raw” stylistics in Indonesian social media, I recommend using the raw dataset (`Comment`) as the primary input.**
+* **Because sentiment is often expressed through slang, emoji, and “raw” stylistics in Indonesian social media, I choose using the raw dataset (`Comment`) as the primary input.**
 
 **IndoRoBERTa**
 
