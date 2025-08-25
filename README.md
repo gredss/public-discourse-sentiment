@@ -12,6 +12,20 @@ This project situates itself in a **real-world case study**: the controversy sur
 
 ---
 
+## Label Definitions
+
+The sentiment classification task is designed around five categories that capture the expressive range of Indonesian social media comments, particularly in politically and socially charged discussions:
+
+* **Anger** – Comments reflecting strong negative emotions.
+* **Disgust** – Sentiment expressing moral revulsion or disdain.
+* **Sadness** – Expressions of disappointment, grief, or hopelessness, often framed as collective suffering.
+* **Sarcasm** – Indirect or humorous sentiment.
+* **Neutral** – Comments unrelated to the DPR salary case or devoid of sentiment.
+
+These categories ensure coverage of both **explicit emotional expression** and **implicit communicative forms** (e.g., sarcasm), reflecting the nuances of Indonesian digital discourse.
+
+---
+
 ## Initial Step: Data Extraction and Cleaning
 
 As a starting point, I collected user-generated comments by extracting **five YouTube videos** related to the DPR bonus salary issue using the YouTube API. This raw dataset mirrors the **authentic language of Indonesian netizens**, including non-standard expressions and heavy use of slang.
