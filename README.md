@@ -1,4 +1,4 @@
-# Public Discourse Sentiment Analysis Pipeline
+# Public Discourse Sentiment Analysis
 
 This repository presents an applied research and engineering effort in building a robust sentiment analysis system for Indonesian text. The project combines model benchmarking, architectural experimentation, scalable labeling strategies, and deployment-oriented design. The end goal is to deliver a task-specific AI agent that can classify sentiment in Indonesian comments with production-level reliability.
 
