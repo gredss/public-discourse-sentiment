@@ -10,6 +10,10 @@ Public discourse in Indonesia is increasingly shaped by social media platforms, 
 
 This project situates itself in a **real-world case study**: the controversy surrounding the **Indonesian House of Representatives (DPR) receiving a daily salary bonus of IDR 3 million**. The case generated intense public reaction online, producing a wide range of sentiments—from anger and criticism to sarcasm and occasional support. By analyzing such discussions, the system demonstrates its relevance in handling sentiment within politically charged and socially noisy contexts.
 
+Moreover, presents a dataset of Indonesian YouTube comments collected in the context of the Jakarta protest on 28 August 2025, a major demonstration that drew nationwide attention. The dataset has been curated to capture how Indonesian citizens express sentiment online in politically and socially charged moments.
+
+Therefore, this project focuses on creating and documenting a high-quality dataset that can serve as a foundation for future work in sentiment analysis, computational social science, and digital politics.
+
 ---
 
 ## Label Definitions
@@ -81,3 +85,13 @@ Hence, IndoBERT is recommended for production deployments due to stability and r
 This table illustrates how minimal cleaning can sometimes alter the contextual cues that influence label assignment, reinforcing the choice of **raw data** for IndoBERT.
 
 ---
+
+#### Purpose and Use
+
+By making this dataset available, the goal is to support:
+
+* **NLP research** on Indonesian sentiment classification.
+* **Social science studies** of political discourse and protest mobilization.
+* **Dataset benchmarking** for transformer-based language models.
+
+Researchers may choose their own annotation strategies, preprocessing pipelines, or model architectures depending on their objectives.
