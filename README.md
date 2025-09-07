@@ -6,13 +6,11 @@ This repository presents an applied research and engineering effort in building 
 
 ## Introduction
 
-Public discourse in Indonesia is increasingly shaped by social media platforms, where millions of comments reflect public opinion on politics, economics, and social issues. Unlike formal writing, these comments often contain **slang, emojis, spelling variations, and informal structures**, making sentiment analysis a non-trivial task.
+Public discourse in Indonesia is increasingly shaped by social media, where millions of comments convey public opinion on political, economic, and social issues. Unlike formal writing, these comments often feature slang, emojis, spelling variations, and informal structures, which makes sentiment analysis particularly challenging.
 
-This project situates itself in a **real-world case study**: the controversy surrounding the **Indonesian House of Representatives (DPR) receiving a daily salary bonus of IDR 3 million**. The case generated intense public reaction online, producing a wide range of sentiments—from anger and criticism to sarcasm and occasional support. By analyzing such discussions, the system demonstrates its relevance in handling sentiment within politically charged and socially noisy contexts.
+This project documents a real-world case study through two politically charged events: the controversy over the Indonesian House of Representatives (DPR) receiving a daily salary bonus of IDR 3 million, and the Jakarta protest of 28 August 2025, a large demonstration that drew nationwide attention. Both episodes sparked intense online debate, ranging from anger and criticism to sarcasm and occasional support.
 
-Moreover, presents a dataset of Indonesian YouTube comments collected in the context of the Jakarta protest on 28 August 2025, a major demonstration that drew nationwide attention. The dataset has been curated to capture how Indonesian citizens express sentiment online in politically and socially charged moments.
-
-Therefore, this project focuses on creating and documenting a high-quality dataset that can serve as a foundation for future work in sentiment analysis, computational social science, and digital politics.
+The result is a curated dataset of Indonesian YouTube comments, designed to capture how citizens express sentiment in moments of political and social tension. By providing this resource, the project aims to support future work in sentiment analysis, computational social science, and the study of digital politics.
 
 ---
 
